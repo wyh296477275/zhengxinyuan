@@ -1,0 +1,97 @@
+{extend name="public/base"}
+{block name="seo"}
+<title>{$title|default="标题"}</title>
+{/block}
+
+{block name="content"}
+<!-- banner开始-->
+<div class="new_banner"></div>
+<!--BANNER END-->
+
+<!--新闻动态 Begin-->
+<div class="news">
+    <div class="news_01">
+        <div class="amenu" style="margin-bottom:40px;">
+            <A href="news.html?cid=11" class="amenu2">公司动态</A>
+            <A href="news2.html" class="amenu1">行业资讯</A>
+        </div>
+        <div class="new09 " style="width:100%;background:#fff;">
+            <ul>
+                <li data-index="1">
+                    <div style="width:1110px;margin:0 auto;overflow:hidden;height:1075px;" >
+                        <div class="xinwen-new ">
+                            <div class="date pt-page-moveFromLeftFade">2016-07-01</div>
+                            <div class="tity pt-page-moveFromRightFade">
+                                <dl>
+                                    <dt></dt>
+                                    <dd><a href="newsshow.php?cid=12&id=155" target="_blank">
+                                        <p style="font-size:16px;">提升电源功率密度 </p>
+                                    </a>
+                                        <p  class="title-89">高端服务器设计中日益提高的处理密度对未来电源系统产生持续影响。ICT数据服务器中每块板的功率要求已经从20世纪80年代早期的300W增加到今天的1kW以上，并且业界预测到2020年每块板将要求达到35kW的功率。目前的DC/DC电源转换器解决方案和技术还不足以达到这些功率等级。</p>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="xinwen-new ">
+                            <div class="date pt-page-moveFromLeftFade">2016-06-02</div>
+                            <div class="tity pt-page-moveFromRightFade">
+                                <dl>
+                                    <dt></dt>
+                                    <dd><a href="newsshow.php?cid=12&id=154" target="_blank">
+                                        <p style="font-size:16px;">汽车电源朝48 V系统进发 </p>
+                                    </a>
+                                        <p  class="title-89">应对不断提升的节能减排的需求/规范，轻型48 V系统销量近十年来一直在增长。</p>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+
+                    </div>
+                </li>
+
+                <div style="clear:both;"></div>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<!--Entrance End-->
+
+<!--公司介绍 BEGIN-->
+
+<!--NEWS END-->
+<!--企业文化开始-->
+
+<!--end-->
+<!--我们都是团队的一份子期待未来-->
+
+<!--end-->
+<!--FOOTER BEGIN-->
+{/block}
+<script type="text/javascript">
+
+    $(function(){
+
+        $('#click_event').click(function(){
+
+            if($('#hidden_enent').is(':hidden')){
+
+                $('#hidden_enent').show();
+
+                $('#click_event').val('点击隐藏');
+
+            }  else{
+
+                $('#hidden_enent').hide();
+
+                $('#click_event').val('点击显示');
+
+            }
+
+        })
+
+    })
+
+</script>
+</body>
+</html>

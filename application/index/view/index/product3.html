@@ -1,0 +1,191 @@
+{extend name="public/base"}
+{block name="seo"}
+<title>{$title|default="标题"}</title>
+{/block}
+
+{block name="content"}
+<!-- banner开始-->
+<div class="cpzx_banner">
+    <div class="wrapper">
+        <SCRIPT src="__STATIC__/js/jquery.dbRotate2D.js" type=text/javascript></SCRIPT>
+        <div class="xiangmulist">
+            <div class="artist_l">
+                <li id="btn" style="margin-left:188px;">
+                    <A href="product.html#alj" >
+                        <img src="__STATIC__/picture/p1.png" alt="__STATIC__/picture/p1.png" width="119" height="119" />
+                    </A>
+                </li>
+                <li id="btn">
+                    <A href="product2.html#alj" >
+                        <img src="__STATIC__/picture/p2.png"  alt="__STATIC__/picture/p2.png" width="119" height="119" />
+                    </A>
+                </li>
+                <li id="btn">
+                    <A href="product3.html#alj" >
+                        <img src="__STATIC__/picture/p3.png"  alt="__STATIC__/picture/p3.png" width="119" height="119" />
+                    </A>
+                </li>
+                <li id="btn">
+                    <A href="product4.html#alj">
+                        <img src="__STATIC__/picture/p4.png" alt="__STATIC__/picture/p4.png" width="119" height="119" />
+                    </A>
+                </li>
+                <li id="btn">
+                    <A href="product5.html#alj" >
+                        <img src="__STATIC__/picture/p5.png"  alt="__STATIC__/picture/p5.png" width="119" height="119" />
+                    </A></li>
+            </div>
+        </div>
+        <script type="text/javascript">
+
+            $('[id=btn]').dbRotate2D();
+
+        </script>
+    </div>
+</div>
+<!--BANNER END-->
+
+<!--内容区域 Begin-->
+<div class="application_con">
+  <div class="app_con">
+    <div class="app_cont">
+      <div class="app_con_r" style="width:100%;">
+      <div class="alj" id="alj"></div>
+        <div class="app_con_rt">
+            <a href="index.html" >首页</a>：
+            <a href="product.html" >产品中心</a> >
+            <a href="product.html" >EMI滤波器</a> >
+        </div>
+        <div class="zuopin_menu">        
+        <A href="product.html" class="zuopin_menu1">DC/DC变换器</A>
+            <A href="product2.html" class="zuopin_menu1">AC/DC电源</A>
+            <A href="product3.html" class="zuopin_menu2">EMI滤波器</A>
+            <A href="product4.html"  class="zuopin_menu1">浪涌抑制器</A>
+            <A href="product5.html"  class="zuopin_menu1">其他产品</A>
+            <A href="product6.html" class="zuopin_menu1">新品发布</A>        </div>
+        <div class="cpzx_con">
+          <div class="cpzx_con_img">
+              <img src="__STATIC__/picture/pt3.jpg"  width="225" height="170" alt=""/></div>
+          <div class="cpzx_tit">
+            <h2>EMI滤波器</h2>
+            <p>交流、直流输入滤波器可选、模块化封装和引脚定义、良好的共模和插模抑制比、0A-20A、可以定制不同外形、可以定制特定的参数、质量等级可选，适应不同场合要求、可选输出引线和导轨安装、金属外壳屏蔽、符合RoHS指令</p>
+          </div>
+          <div style="clear:both;height:0;width:0;"></div>
+        </div>
+        <div class="kc_kcb1">
+          <table cellspacing="0" cellpadding="0" id="mytable">
+            <tr>
+              <th width="100">系列名称</th>
+              <th width="80">产品图片</th>
+              <th><p>输出电流<br />
+                  （A）</p></th>
+              <th width="170"><p>输入电压</p></th>
+              <th><p>最大直流电阻<br />
+                  （mΩ）</p></th>
+              <th><p>封装尺寸<br />
+                  （mm）</p></th>
+              <th width="270">其他特点</th>
+              <th width="80">典型行业</th>
+            </tr>
+                        <tr>
+              <td>TFB</td>
+              <td align="center"><img src="__STATIC__/picture/TFB.jpg" height="48" /></td>
+              <td>4</td>
+              <td>0～100Vdc</td>
+              <td>70</td>
+              <td>25.4×19.0×6.8</td>
+              <td><p>SMD，低直流电阻，高干扰抑制比，小外形，可针对不同行业要求进行设计</p></td>
+              <td>通信、铁路 电力等</td>
+            </tr>
+                        <tr>
+              <td>TFE</td>
+              <td align="center"><img src="__STATIC__/picture/1467375150.jpg"  height="48" /></td>
+              <td>10</td>
+              <td>0～100Vdc</td>
+              <td>16</td>
+              <td>30.5×20.7×9.6</td>
+              <td><p>SMD，低直流电阻，高干扰抑制比，小外形，可针对不同行业要求进行设计</p></td>
+              <td>通信、铁路 电力等</td>
+            </tr>
+                        <tr>
+              <td>TFC</td>
+              <td align="center"><img src="__STATIC__/picture/1467372749.jpg"  height="48" /></td>
+              <td>5</td>
+              <td>0～100Vdc、0～200Vdc</td>
+              <td>27</td>
+              <td>25.4×25.4×11.7</td>
+              <td><p>SMD，低直流电阻，高干扰抑制比，小外形，可针对不同行业要求进行设计</p></td>
+              <td>通信、铁路 电力等</td>
+            </tr>
+                        <tr>
+              <td>TFH</td>
+              <td align="center"><img src="__STATIC__/picture/1467367767.jpg"  height="48" /></td>
+              <td>10</td>
+              <td>0～100Vdc、0～200Vdc</td>
+              <td>17</td>
+              <td>50.8×25.4×11.7</td>
+              <td><p>SMD，低直流电阻，高干扰抑制比，小外形，可针对不同行业要求进行设计</p></td>
+              <td>通信、铁路 电力等</td>
+            </tr>
+                        <tr>
+              <td>TFK</td>
+              <td align="center"><img src="__STATIC__/picture/1467376685.jpg"  height="48" /></td>
+              <td>20</td>
+              <td>0～100Vdc、0～200Vdc</td>
+              <td>7</td>
+              <td>50.8×40.6×11.7</td>
+              <td><p>SMD，低直流电阻，高干扰抑制比，小外形，可针对不同行业要求进行设计</p></td>
+              <td>通信、铁路 电力等</td>
+            </tr>
+                        <tr>
+              <td>TFF</td>
+              <td align="center"><img src="__STATIC__/picture/1467368878.jpg"  height="48" /></td>
+              <td>1.5</td>
+              <td>0～264Vac</td>
+              <td>-</td>
+              <td>33.7×22.2×17.8</td>
+              <td><p>SMD，低直流电阻，高干扰抑制比，小外形，可针对不同行业要求进行设计</p></td>
+              <td>通信、铁路 电力等</td>
+            </tr>
+                        <tr>
+              <td>TFJ</td>
+              <td align="center"><img src="__STATIC__/picture/1467375359.jpg" height="48" /></td>
+              <td>10</td>
+              <td>0～200Vdc</td>
+              <td>17</td>
+              <td>50.8×25.4×15.2</td>
+              <td><p>DIP，低直流电阻，高干扰抑制比，小外形，可针对不同行业要求进行设计</p></td>
+              <td>通信、铁路 电力等</td>
+            </tr>
+                        <tr>
+              <td>TFL</td>
+              <td align="center"><img src="__STATIC__/picture/1467376782.jpg"  height="48" /></td>
+              <td>15、1.5</td>
+              <td>0～200Vdc、0～264Vac</td>
+              <td>-</td>
+              <td>53.8×28.8×19.0</td>
+              <td><p>DIP，高干扰抑制比，可针对不同行业要求进行设计，安装方式可选</p></td>
+              <td>通信、铁路 电力等</td>
+            </tr>
+                        <tr>
+              <td>TFM</td>
+              <td align="center"><img src="__STATIC__/picture/1467377178.jpg"  height="48" /></td>
+              <td>20</td>
+              <td>0～264Vac</td>
+              <td>-</td>
+              <td>62.0×45.0×22.5</td>
+              <td><p>DIP，高干扰抑制比，可针对不同行业要求进行设计，安装方式可选</p></td>
+              <td>通信、铁路 电力等</td>
+            </tr>
+                      </table>
+        </div>
+        
+      </div>
+      <div style="clear:both;"></div>
+    </div>
+  </div>
+</div>
+<!--Entrance End--> 
+{/block}
+</body>
+</html>

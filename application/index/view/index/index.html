@@ -1,0 +1,209 @@
+{extend name="public/base"}
+{block name="seo"}
+<title>{$title|default="标题"}</title>
+{/block}
+
+{block name="content"}
+<!--banner开始-->
+<div id="banner">
+    <div class="index_focus">
+
+        <a href="javascript:;" class="index_focus_pre" title="上一张">上一张</a>
+        <a href="javascript:;" class="index_focus_next" title="下一张">下一张</a>
+
+
+
+        <div class="bd">
+            <ul>
+
+                <li>
+                    <a href="" target="_blank"><img class="pic" src="__STATIC__/picture/banner1.jpg" width="1350" height="427" alt=""></a>
+                </li>
+
+                <li>
+                    <a href="" target="_blank"><img class="pic" src="__STATIC__/picture/banner2.jpg" width="1350" height="427" alt=""></a>
+                </li>
+
+                <li>
+                    <a href="" target="_blank"><img class="pic" src="__STATIC__/picture/banner3.jpg"  width="1350" height="427" alt=""></a>
+                </li>
+
+                <li>
+                    <a href="" target="_blank"><img class="pic" src="__STATIC__/picture/banner4.jpg"  width="1350" height="427" alt=""></a>
+                </li>
+
+
+            </ul>
+        </div>
+
+        <div class="slide_nav">
+
+            <a href="javascript:;">●</a>
+
+            <a href="javascript:;">●</a>
+
+            <a href="javascript:;">●</a>
+
+            <a href="javascript:;">●</a>
+
+        </div>
+
+    </div>
+</div>
+<script type="text/javascript">
+    jQuery(".index_focus").hover(function(){
+        jQuery(this).find(".index_focus_pre,.index_focus_next").stop(true, true).fadeTo("show", 1)
+    },function(){
+        jQuery(this).find(".index_focus_pre,.index_focus_next").fadeOut()
+    });
+    jQuery(".index_focus").slide({
+        titCell: ".slide_nav a ",
+        mainCell: ".bd ul",
+        delayTime: 500,
+        interTime: 1800,
+        prevCell:".index_focus_pre",
+        nextCell:".index_focus_next",
+        effect: "fold",
+        autoPlay: true,
+        trigger: "click",
+        startFun:function(i){
+            jQuery(".index_focus_info").eq(i).find("h3").css("display","block").fadeTo(1000,1);
+            jQuery(".index_focus_info").eq(i).find(".text").css("display","block").fadeTo(1000,1);
+        }
+    });
+</script>
+<!--banner结束-->
+
+<!--Entrance Begin-->
+<div id="entrance_box">
+  <div id="entrance" class="wrap"><!-- class="wow bounceIn " data-wow-delay="0.4s"-->
+        <ul class="clearfix">
+            <li>
+                <div class="entrance_img">
+                  <img src="__STATIC__/picture/01.png" height="120" width="200" class="ent_img"/>
+                    <span>
+                        <a href="{:url('index/product')}">
+                            <img src="__STATIC__/picture/i1.png"  width="200"/>
+                        </a>
+                    </span>
+                </div>
+                <b>
+                    <a href="{:url('index/product')}">产品中心</a>
+                </b>
+            </li>
+            <li>
+                <div class="entrance_img">
+                  <img src="__STATIC__/picture/02.png"  height="120" width="200" class="ent_img" />
+                    <span>
+                        <a href="{:url('index/news')}" >
+                        <img src="__STATIC__/picture/i2.png" width="200" />
+                        </a>
+                    </span>
+                </div>
+                <b><a href="{:url('index/news')}">新闻中心</a></b>
+            </li>
+            
+            <li>
+                <div class="entrance_img">
+                  <img src="__STATIC__/picture/03.png"  height="120" width="200" class="ent_img" />
+                    <span>
+                        <a href="{:url('index/contact')}" >
+                        <img src="__STATIC__/picture/i3.png"width="200" />
+                        </a>
+                    </span>
+                </div>
+                <!-- 应用视频 -->
+                <b><a href="{:url('index/contact')}" >联系我们</a></b>
+            </li>
+
+            <li>
+                <div class="entrance_img">
+                  <img src="__STATIC__/picture/04.png"  height="120"  width="200" class="ent_img" />
+                    <span>
+                        <a href="{:url('index/application')}" >
+                            <img src="__STATIC__/picture/i4.png" width="200" />
+                        </a>
+                    </span>
+                </div>
+                <!-- 应用视频 -->
+                <b><a href="{:url('index/application')}" >应用资料</a></b>
+            </li>
+            
+            <li class="entrance_last">
+              <div class="entrance_img">
+                  <img src="__STATIC__/picture/05.png"  height="120" width="200" class="ent_img" />
+                    <span>
+                        <a href="about.html" >
+                        <img src="__STATIC__/picture/i5.png"  width="200" height="120" />
+                        </a>
+                    </span>
+                </div>
+                        <b><a href="about.html">关于我们</a></b>
+            </li>
+            
+        </ul>
+        <div class="clear"></div>
+    </div>
+</div>
+<!--Entrance End-->
+
+<!--NEWS BEGIN-->
+<div class="con_list"><!-- class="wow bounceInLeft" data-wow-delay="0.2s"-->
+  <ul class="wrap clearfix">
+    <li class="news">
+      <div class="top clearfix">
+        <h3></h3>
+        <a href="news.html" ></a>
+      </div>
+            <dl class="clearfix">
+        <dt><a href="news.html" ></a></dt>
+        <dd>
+          <h3><a href="newsshow.html" target="_blank">1/4砖9-36V输入100W...</a></h3>
+          <p>公司发布了9～36V输入，100W标准外形1/4砖......</p>
+        </dd>
+      </dl>
+            <ul>
+                <li><a href="../newsshow.php-cid=11&id=153.htm" >1/4砖9-36V输入100W  DC/DC变换器研...</a></li>
+                <li><a href="../newsshow.php-cid=11&id=152.htm">公司承担中国电子科技集团公司第五十四所...</a></li>
+                <li><a href="../newsshow.php-cid=11&id=151.htm" >50.8×40.6外形15W三路全稳压DC/DC变...</a></li>
+              </ul>
+    </li>
+    <li class="solution news">
+      <div class="top clearfix">
+        <h3></h3>
+        <a href="../yingyong.php-cid=19.htm"></a>
+      </div>
+      <a href="../yingyong.php-cid=19.htm" class="sol_img"></a>
+      <ul>
+        <li><a href="../yingyongshow.php-cid=19&id=117.htm" >解决方案介绍6</a></li>
+      </ul>
+    </li>
+    <li class="infor news">
+      <div class="top clearfix">
+        <h3></h3>
+      </div>
+      <form action="" method="?action=add"  onsubmit="return cfm_msg();">
+        <dl class="clearfix">
+          <dt>姓名：</dt>
+          <dd><input type="text" name="nickname" id="nickname" class="name" /></dd>
+        </dl>
+        <dl class="clearfix">
+          <dt>电话：</dt>
+          <dd><input type="text" name="contact" id="contact" class="name" /></dd>
+        </dl>
+        <dl class="clearfix">
+          <dt>问题：</dt>
+          <dd><textarea name="content" id="content" cols="30" rows="10"></textarea></dd>
+        </dl>
+        <input type="submit" class="reset" value="提交" />
+        
+        <input type="hidden" name="action" id="action" value="add" />
+      </form>
+    </li>
+  </ul>
+    
+</div>
+<!--NEWS END-->
+{/block}
+</body>
+</html>

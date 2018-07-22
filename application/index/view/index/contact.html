@@ -1,0 +1,84 @@
+{extend name="public/base"}
+{block name="seo"}
+<title>{$title|default="标题"}</title>
+{/block}
+
+<style type="text/css">
+    body, html{width: 100%;height: 100%; margin:0;font-family:"微软雅黑";}
+    #l-map{height:300px;width:100%;}
+    #r-result{width:100%;}
+</style>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=bkaRcuGCwyVX3y7mCan79LKIHpOshWkb"></script>
+
+{block name="content"}
+
+<!-- banner开始-->
+<div class="lianxi_banner"></div>
+<!--BANNER END-->
+<!--联系我们-->
+<div style="width:100%;background:url(__STATIC__/picture/lx_bj01.jpg) center no-repeat;height:104px; padding-top:10px;" class="contact_us_con">
+    <div style="width:1110px;margin:0 auto;">
+        <div class="tell_us">联系我们</div>
+    </div>
+</div>
+<div style="width:100%;padding-top:0;" class="contact_us_con;">
+    <div style="width:1110px;margin:0 auto;">
+        <div class="contact">
+            <div class="contact1">
+                <div class="contact11">
+                    <ul style="margin-top:100px;">
+                        <p><strong>销售联系方式</strong></p>
+                        <p>电话：010-62462515-805/806 </p>
+                        <p>电话：010-82494690-805/806 </p>
+                        <p>传真：010-82494690-803</p>
+                    </ul>
+                    <ul style="margin-top:10px;">
+                        <p>QQ：2991639300 </p>
+                        <p>地址：北京市海淀区显龙山路19号1幢1座429</p>
+                        <p>电子邮箱：sales@zxypower.com </p>
+                    </ul>
+                </div>
+                <div class="contact12">
+                    <ul style="margin-top:100px;">
+                        <p><strong>人力资源联系方式</strong></p>
+                        <p>电话：010-82494690-808</p>
+                        <p>传真：010-82494690-803</p>
+                    </ul>
+                    <ul style="margin-top:47px;">
+                        <p>QQ：571884735</p>
+                        <p>地址：北京市海淀区显龙山路19号1幢1座429</p>
+                        <p>电子邮箱：hr@zxypower.com</p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end-->
+
+<!--地图 begin-->
+
+<div class="map_con">
+    <div class="map_cont">
+        <div class="map_start">
+            <div id="l-map" style="width: 1110px; height: 354px;"></div>
+            <!--<div id="r-result"></div>-->
+        </div>
+    </div>
+</div>
+
+
+<!--end-->
+{/block}
+<script type="text/javascript">
+    // 百度地图API功能
+    var map = new BMap.Map("l-map");            // 创建Map实例
+    map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);
+    // var local = new BMap.LocalSearch(map, {
+    //     renderOptions: {map: map, panel: "r-result"}
+    // });
+    local.search("北京市海淀区显龙山路19号1幢1座429");
+</script>
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+{extend name="public/base"}
+{block name="seo"}
+<title>{$title|default="标题"}</title>
+{/block}
+
+{block name="content"}
+<div class="cpzx_banner">
+    <div class="wrapper">
+        <SCRIPT src="__STATIC__/js/jquery.dbRotate2D.js" type=text/javascript></SCRIPT>
+        <div class="xiangmulist">
+            <div class="artist_l">
+                <li id="btn" style="margin-left:188px;">
+                    <A href="product.html#alj" >
+                        <img src="__STATIC__/picture/p1.png" alt="__STATIC__/picture/p1.png" width="119" height="119" />
+                    </A>
+                </li>
+                <li id="btn">
+                    <A href="product2.html#alj" >
+                        <img src="__STATIC__/picture/p2.png"  alt="__STATIC__/picture/p2.png" width="119" height="119" />
+                    </A>
+                </li>
+                <li id="btn">
+                    <A href="product3.html#alj" >
+                        <img src="__STATIC__/picture/p3.png"  alt="__STATIC__/picture/p3.png" width="119" height="119" />
+                    </A>
+                </li>
+                <li id="btn">
+                    <A href="product4.html#alj">
+                        <img src="__STATIC__/picture/p4.png" alt="__STATIC__/picture/p4.png" width="119" height="119" />
+                    </A>
+                </li>
+                <li id="btn">
+                    <A href="product5.html#alj" >
+                        <img src="__STATIC__/picture/p5.png"  alt="__STATIC__/picture/p5.png" width="119" height="119" />
+                    </A></li>
+            </div>
+        </div>
+        <script type="text/javascript">
+
+            $('[id=btn]').dbRotate2D();
+
+        </script>
+    </div>
+</div>
+<!--BANNER END-->
+
+<!--内容区域 Begin-->
+<div class="application_con">
+    <div class="app_con">
+        <div class="app_cont">
+            <div class="app_con_r" style="width:100%;">
+                <div class="alj" id="alj"></div>
+                <div class="app_con_rt"><a href="/">首页</a>：
+                    <a href="product.html">产品中心</a> >
+                    <a href="product.html">其他产品</a> >
+                </div>
+                <div class="zuopin_menu">
+                    <A href="product.html" class="zuopin_menu1">DC/DC变换器</A>
+                    <A href="product2.html" class="zuopin_menu1">AC/DC电源</A>
+                    <A href="product3.html" class="zuopin_menu1">EMI滤波器</A>
+                    <A href="product4.html" class="zuopin_menu1">浪涌抑制器</A>
+                    <A href="product5.html" class="zuopin_menu2">其他产品</A>
+                    <A href="product6.html" class="zuopin_menu1">新品发布</A>
+                </div>
+                <div class="cpzx_con">
+                    <div class="cpzx_con_img">
+                        <img src="__STATIC__/picture/pt5.jpg" width="225" height="170" alt=""/>
+                    </div>
+                    <div class="cpzx_tit">
+                        <h2>其他产品</h2>
+                        <p>致力于简化电源使用、可定制不同的外形和功能、可选输出引线和导轨安装、多模块均流使用的均流器、多模块使用的时序控制器、环境异常指示器、配套散热片、配套绝缘垫、性能测试工装</p>
+                    </div>
+                    <div style="clear:both;height:0;width:0;"></div>
+                </div>
+                <div class="kc_kcb1">
+                    <table cellspacing="0" cellpadding="0" id="mytable">
+                        <tr>
+                            <th width="100">系列名称</th>
+                            <th width="80">产品图片</th>
+                            <th><p>性能</p></th>
+                            <th width="90"><p>电压<br />
+                                （Vdc）</p></th>
+                            <th width="170"><p>特征指标</p></th>
+                            <th><p>封装尺寸<br />
+                                （mm）</p></th>
+                            <th>其他特点</th>
+                            <th width="80">典型行业</th>
+                        </tr>
+                        <tr>
+                            <td>均流器：JLQ-20A</td>
+                            <td align="center"><img src="__STATIC__/picture/1467381282.jpg" height="48" /></td>
+                            <td>20A max.</td>
+                            <td>15max.</td>
+                            <td>均流度5%</td>
+                            <td>25.4×25.4×11.7</td>
+                            <td><p>DIP，散热片可选</p></td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>均流器：JLQ-40A</td>
+                            <td align="center"><img src="__STATIC__/picture/1467381452.jpg" height="48" /></td>
+                            <td>40A max.</td>
+                            <td>15max.</td>
+                            <td>均流度5%</td>
+                            <td>50.8×25.4×11.7</td>
+                            <td><p>DIP，散热片可选</p></td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>时序控制器：SKQ-3</td>
+                            <td align="center"><img src="__STATIC__/picture/1467381205.jpg" height="48" /></td>
+                            <td>最大3路</td>
+                            <td>48max.</td>
+                            <td>隔离电压3000Vac</td>
+                            <td>25.4×25.4×11.7</td>
+                            <td><p>DIP，可设置不同电源启动延时时间</p></td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>环境异常指示器：EFQ</td>
+                            <td align="center"><img src="__STATIC__/picture/1467382009.jpg" height="48" /></td>
+                            <td>输入电压、温度</td>
+                            <td>-</td>
+                            <td>最高温度125度输入欠压指示</td>
+                            <td>25.4×8.5×12.7</td>
+                            <td><p>SIP，本系列产品可根据客户需求灵活设计</p></td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>散热片</td>
+                            <td align="center"><img src="__STATIC__/picture/1467360167.jpg" height="48" /></td>
+                            <td>铝合金</td>
+                            <td>-</td>
+                            <td>配套标准产品封装尺寸</td>
+                            <td>-</td>
+                            <td><p>主要配套电源产品使用，特许规格请和我公司联系</p></td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>绝缘垫</td>
+                            <td align="center"><img src="__STATIC__/picture/7.png" height="48" /></td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>配套标准产品封装和安装</td>
+                            <td>-</td>
+                            <td><p>主要配套电源产品使用，特许规格请和我公司联系</p></td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>性能测试工装</td>
+                            <td align="center"><img src="__STATIC__/picture/工装.jpg" height="48" /></td>
+                            <td>根据产品系列</td>
+                            <td></td>
+                            <td>测试最大电流100A，最多测试3路</td>
+                            <td>-</td>
+                            <td><p>可作为产品性能指标验证，入厂检验等辅助设施，提高检验效率和准确性。</p></td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>电压选择器</td>
+                            <td align="center"><img src="__STATIC__/picture/电压选择器网站图片.jpg" height="48" /></td>
+                            <td>10A max.</td>
+                            <td>9～40Vdc</td>
+                            <td>应用于双供电场合，实现双路供电时主路优先供电</td>
+                            <td>50.8×25.4×12.7</td>
+                            <td><p>可配套电源产品使用，特许规格请和我公司联系</p></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+    </div>
+</div>
+<!--Entrance End-->
+{/block}
+</body>
+</html>
